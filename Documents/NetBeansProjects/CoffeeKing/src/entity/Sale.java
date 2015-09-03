@@ -9,11 +9,12 @@ public class Sale {
   private static int nextSaleID = 1001;
   private int saleID;
   private Coffee coffee;
-  private int quantity = 1;
+  private int quantity=1;
 
   public Sale() {
     this.date = new GregorianCalendar();
-    this.saleID = nextSaleID++;
+    this.saleID = nextSaleID;
+    nextSaleID++;
   }
 
   public Sale(Coffee coffee, int quantity) {
