@@ -6,10 +6,10 @@ import java.util.GregorianCalendar;
 public class Sale {
 
   private Calendar date;
-  private static int nextSaleID = 19001;
+  private static int nextSaleID = 10001;
   private int saleID;
   private Coffee coffee;
-  private int quantity;
+  private int quantity = 1;
 
   public Sale() {
     this.date = new GregorianCalendar();
